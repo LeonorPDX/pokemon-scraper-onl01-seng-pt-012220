@@ -9,6 +9,7 @@ class Pokemon
     @db = hash[:db]
   end
   
+<<<<<<< HEAD
   def self.save(name, type, db)
     db.execute("INSERT INTO pokemon (name, type) VALUES (?, ?)",name, type)
   end
@@ -32,5 +33,13 @@ class Pokemon
     pok = self.new(pok_hash)
     
     pok
+=======
+  def save
+    
+  end
+  
+  def find 
+    
+>>>>>>> 1ba10744fac36c1abf357d786a907841b692b6f3
   end
 end
